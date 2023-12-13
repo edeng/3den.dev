@@ -7,6 +7,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+header {
+    padding-bottom: 20px;
+}
 
 #menu {
 	border-bottom: 1px solid #757575;
@@ -43,7 +46,7 @@
     justify-content: flex-end;
 }
 
-#logo-title {
+#logo-title, .job {
 	flex-grow: 2;
 	font-size: 20px;
 	font-weight: 500;
@@ -54,4 +57,18 @@
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.logo {
+	padding: 8px 8px;
+	max-width: 24px;
+}
+
+#thinksy-logo {
+	padding: 8px 8px;
+	max-width: 24px;
+}
+
+.job {
+    font-size: 15px;
 }
