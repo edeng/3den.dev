@@ -23,7 +23,7 @@ header {
     flex-wrap: nowrap;
 }
 
-#me-img {
+.header-img {
 	padding: 8px 4px;
 	max-width: 24px;
 }
