@@ -69,6 +69,10 @@ header {
 	max-width: 24px;
 }
 
-.job {
+.job, .bullet {
     font-size: 15px;
+}
+
+.section {
+    padding-bottom: 40px;
 }
