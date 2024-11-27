@@ -1,78 +1,92 @@
-#container {
-	font-family: 'Courier Prime', monospace;
-	width: 100%;
-	height: 100%;
-	background-color: #fdffff;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+/* Ensure the layout is responsive */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+#container {
+    font-family: 'Courier Prime', monospace;
+    width: 100%;
+    background-color: #fdffff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px; /* Add padding for better readability */
+}
+
 header {
     padding-bottom: 20px;
 }
 
 #menu {
-	border-bottom: 1px solid #757575;
-	height: 40px;
-	padding: 0 16px 0 16px;
-	margin-top: 2px;
+    border-bottom: 1px solid #757575;
+    padding: 8px 16px; /* Adjust padding for mobile */
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
     align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    justify-content: space-between; /* Better alignment for menu items */
 }
 
 .header-img {
-	padding: 8px 4px;
-	max-width: 24px;
+    padding: 4px; /* Reduce padding for smaller screens */
+    max-width: 24px;
 }
 
 #menu-left {
-	width: 100%;
-	height: 100%;
     display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-start;
+    align-items: center;
+    gap: 8px; /* Add spacing between elements */
 }
 
 #menu-right {
+    display: flex;
     align-items: center;
-    display: flex;
-	height: 100%;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end;
+    gap: 8px; /* Add spacing between icons */
 }
 
-#logo-title, .job {
-	flex-grow: 2;
-	font-size: 20px;
-	font-weight: 500;
-    text-align: left;
-    left: 0;
-    right: 0;
-    position: relative;
+#logo-title {
+    font-size: 18px; /* Reduce font size for smaller screens */
+    font-weight: 500;
     display: flex;
     align-items: center;
+    text-align: left;
 }
 
 .logo {
-	padding: 8px 8px;
-	max-width: 24px;
-}
-
-#thinksy-logo {
-	padding: 8px 8px;
-	max-width: 24px;
-}
-
-.job, .bullet {
-    font-size: 15px;
+    padding: 4px; /* Reduce padding for smaller screens */
+    max-width: 24px;
 }
 
 .section {
-    padding-bottom: 40px;
+    padding-bottom: 32px;
+}
+
+.job, .bullet {
+    font-size: 14px; /* Slightly smaller font size for better fit */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    #menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center;
+    }
+
+    #menu-left, #menu-right {
+        width: 100%; /* Make menu items span full width */
+        justify-content: center; /* Center align for better appearance */
+    }
+
+    #logo-title {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .job, .bullet {
+        font-size: 13px; /* Reduce font size for smaller screens */
+    }
+
+    .section {
+        padding-bottom: 24px; /* Reduce padding for better fit */
+    }
 }
