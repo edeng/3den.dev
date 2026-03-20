@@ -70,6 +70,18 @@ header {
     word-wrap: break-word;
 }
 
+/* Flying Comet Games embeds */
+.section--game {
+    min-width: 0;
+}
+
+.fcg-game {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
 .job, .bullet {
     font-size: 14px; /* Slightly smaller font size for better fit */
     line-height: 1.6; /* Improve readability */
